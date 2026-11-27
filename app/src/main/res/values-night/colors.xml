@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== Widget 夜间主题（车机夜间深色壁纸适配：透出壁纸 + 浅色文字）===== -->
+    <color name="widget_title">#FFFFFF</color>
+    <color name="widget_artist">#AEC9EE</color>
+    <color name="widget_lyric_m3">#3E5E85</color>
+    <color name="widget_lyric_m4">#334F74</color>
+    <color name="widget_lyric_m2">#4A6D9A</color>
+    <color name="widget_lyric_m1">#5A7FA8</color>
+    <color name="widget_lyric_cur">#3BA0FF</color>
+    <color name="widget_lyric_cur_shadow">#B35CA8FF</color>
+    <color name="widget_lyric_next">#7FA6D8</color>
+    <color name="widget_lyric_3">#6A8FBE</color>
+    <color name="widget_lyric_4">#5F84B2</color>
+    <color name="widget_lyric_n4">#486899</color>
+    <color name="widget_divider">#2E8CB9FF</color>
+    <color name="widget_btn_side_bg">#1CFFFFFF</color>
+    <color name="widget_overlay">#33000000</color>
+</resources>

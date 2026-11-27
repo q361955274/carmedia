@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 晴空主题 · 播放/暂停按钮：accent 渐变圆（#3BA0FF→#1677F5），带辉光 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:angle="315"
+        android:startColor="#3BA0FF"
+        android:endColor="#1677F5"
+        android:type="linear" />
+</shape>

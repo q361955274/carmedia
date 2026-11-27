@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 晴空主题 · 桌面歌词行背景（当前句）：淡蓝高亮 + 圆角 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#1E3BA0FF" />
+    <corners android:radius="10dp" />
+</shape>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 与原 APK 一致 -->
+    <style name="Theme.CarMedia" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/bg_main</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 顶部黑边（状态栏）修复。windowFullscreen=true 只隐藏顶部状态栏；
+             底部虚拟按键导航栏保留显示，由 MainActivity hideSystemBars()
+             的 SYSTEM_UI_FLAG_FULLSCREEN|IMMERSIVE_STICKY|LAYOUT_STABLE（不含 HIDE_NAVIGATION）控制 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/bg_status_bar</item>
+        <item name="android:navigationBarColor">@color/bg_nav_bar</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 晴空主题 · 整卡封面背景的轻遮罩：让封面整体铺满卡片，轻微压暗保证前景可读
+     左→右：浅深蓝渐变，左侧略深(信息区衬底)、右侧略浅(歌词背景更清晰) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:startColor="#660D1628"
+        android:centerColor="#400D1628"
+        android:endColor="#330D1628"
+        android:type="linear" />
+    <!-- ★ 圆角：与卡片圆角一致，避免方形遮罩在封面圆角区外画出直角边框 -->
+    <corners android:radius="16dp" />
+</shape>

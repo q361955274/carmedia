@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 晴空主题 · 卡片背景：深蓝渐变 + 淡蓝辉光（照抄 ui.html body.skin-sky 深底） -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="315"
+        android:startColor="#12203A"
+        android:centerColor="#0D1628"
+        android:endColor="#0A1220"
+        android:type="linear" />
+    <corners android:radius="16dp" />
+</shape>

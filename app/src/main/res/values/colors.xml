@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main">#ff080b13</color>
+    <color name="bg_nav_bar">#ff0f0f23</color>
+    <color name="bg_status_bar">#ff0f0f23</color>
+    <!-- ===== Widget 日间主题（车机日间浅色壁纸适配）===== -->
+    <!-- 与 ui.html body.light 晴空日间色板对齐：txt-strong #141a26 / accent #2563eb / card 白 -->
+    <color name="widget_title">#141A26</color>
+    <color name="widget_artist">#3A4557</color>
+    <color name="widget_lyric_m4">#C4D6E9</color>
+    <color name="widget_lyric_m3">#A9BED8</color>
+    <color name="widget_lyric_m2">#8FA9C8</color>
+    <color name="widget_lyric_m1">#7896BC</color>
+    <color name="widget_lyric_cur">#2563EB</color>
+    <color name="widget_lyric_cur_shadow">#332563EB</color>
+    <color name="widget_lyric_next">#4C5B70</color>
+    <color name="widget_lyric_3">#5D6E86</color>
+    <color name="widget_lyric_4">#6F8199</color>
+    <color name="widget_lyric_n4">#8295B0</color>
+    <color name="widget_divider">#3D2563EB</color>
+    <color name="widget_btn_side_bg">#1A2A44</color>
+    <color name="widget_overlay">#1CFFFFFF</color>
+</resources>

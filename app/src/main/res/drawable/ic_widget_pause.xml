@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 暂停按钮：原版 MediaCenterUi 图标（ic_pause.png，灰双竖线），带按压态 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/ic_pause_press" />
+    <item android:drawable="@drawable/ic_pause" />
+</selector>

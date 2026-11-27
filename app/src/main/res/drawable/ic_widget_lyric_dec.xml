@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <!-- 字号减小：深蓝灰(#363B48)横线，与控制按钮 ic_prev/ic_next 图标同色；透明底，线条粗 5/44 -->
+    <path
+        android:fillColor="#FF363B48"
+        android:pathData="M8,19.5h28v5H8z" />
+</vector>

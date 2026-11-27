@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 晴空主题 · 右侧歌词内容层衬底：极浅半透明，右侧封面清晰露出，仅轻微压暗保证白字可读 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:startColor="#2E0D1628"
+        android:centerColor="#1F0D1628"
+        android:endColor="#2E0D1628"
+        android:type="linear" />
+    <corners android:radius="14dp" />
+</shape>

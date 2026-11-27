@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 晴空主题 · 播放按钮：accent 渐变圆 + 辉光（照抄 widget_btn_play 已有，独立命名复用） -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:angle="315"
+        android:startColor="#3BA0FF"
+        android:endColor="#1677F5"
+        android:type="linear" />
+    <stroke android:width="0.0dip" android:color="#00000000" />
+</shape>

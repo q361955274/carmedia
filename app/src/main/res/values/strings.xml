@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">蓝牙音乐</string>
+    <string name="service_notification_title">CarMedia Service</string>
+    <string name="service_notification_text">Media bridge active</string>
+    <!-- 方向盘按键监听无障碍服务描述（系统设置中显示） -->
+    <string name="accessibility_service_description">CarMedia 方向盘按键监听服务，用于接收方控按键事件（上一曲/下一曲/静音/模式等），支持长按检测。不读取屏幕内容，不收集个人信息。</string>
+
+    <!-- ===== 桌面小部件（晴空主题 · 多媒体卡片）文案 ===== -->
+    <string name="sky_widget_description">晴空音乐卡片</string>
+    <string name="widget_default_title">蓝牙音乐</string>
+    <string name="widget_default_artist">CarMedia</string>
+    <string name="widget_default_lyric">等待播放…</string>
+    <string name="widget_default_lyric_next">暂无歌词</string>
+    <string name="widget_default_lyric_3">暂无歌词</string>
+    <string name="widget_cover_desc">专辑封面</string>
+    <string name="widget_prev_desc">上一曲</string>
+    <string name="widget_play_desc">播放 / 暂停</string>
+    <string name="widget_next_desc">下一曲</string>
+    <string name="widget_lyric_size_desc">调整歌词大小</string>
+    <string name="widget_lyric_dec_desc">字号减小</string>
+    <string name="widget_lyric_inc_desc">字号增大</string>
+</resources>

@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+// =============================================================
+// 本地配置注入说明（务必阅读）
+// 1. 真实凭据（eCarX AppId / AppKey）与更新地址只放在本机根目录的
+//    local.properties 中；该文件已被 .gitignore 忽略，严禁提交入库。
+// 2. 仓库公开时不含任何真实值：未配置时走下方缺省占位符，保证无本地
+//    凭据也能编译通过；开发者本地复制 local.properties.example 为
+//    local.properties 后填入真实值即可，构建时自动注入。
+// 3. 本文件只做构建配置占位化，不包含任何真实凭据 / 真实域名。
+// =============================================================
+
+// 读取根目录 local.properties；文件不存在或读取失败时使用缺省占位符，不抛异常
+def localPropsFile = new File(rootProject.projectDir, "local.properties")
+def localProps = new Properties()
+if (localPropsFile.exists()) {
+    localPropsFile.withInputStream { localProps.load(it) }
+}
+
+// 三个可选配置键；缺省值均为明显占位符，不能是任何真实值
+String ecarxAppId = localProps.getProperty("ecarx.appId", "YOUR_ECARX_APP_ID")
+String ecarxAppKey = localProps.getProperty("ecarx.appKey", "YOUR_ECARX_APP_KEY")
+String updateUrl = localProps.getProperty("carmedia.updateUrl", "https://example.com/CarMedia.txt")
+// 热更新（GitHub 私有仓库）三项可选配置；缺省为占位符，未配置时不发起热更新请求
+String ghOwner = localProps.getProperty("gh.owner", "YOUR_GITHUB_OWNER")
+String ghRepo = localProps.getProperty("gh.repo", "YOUR_GITHUB_REPO")
+String ghToken = localProps.getProperty("gh.token", "YOUR_GITHUB_TOKEN")
+
+android {
+    namespace 'com.ecarx.carmedia'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ecarx.carmedia"
+        minSdk 28
+        targetSdk 28
+        versionCode 33
+        versionName "1.6.8"
+
+        // 通过 manifestPlaceholders 向清单注入凭据；缺省为占位符，不写真实值
+        manifestPlaceholders = [
+            ecarxAppId: ecarxAppId,
+            ecarxAppKey: ecarxAppKey
+        ]
+
+        // 更新地址写入 BuildConfig.UPDATE_URL（字段名严格为 UPDATE_URL）
+        buildConfigField "String", "UPDATE_URL", "\"${updateUrl}\""
+        // 热更新仓库归属与访问令牌写入 BuildConfig；缺省占位符，不写真实值
+        buildConfigField "String", "GITHUB_OWNER", "\"${ghOwner}\""
+        buildConfigField "String", "GITHUB_REPO", "\"${ghRepo}\""
+        buildConfigField "String", "GITHUB_TOKEN", "\"${ghToken}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    // AGP 8 默认关闭 BuildConfig 生成，需显式开启
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = "UTF-8"
+    }
+
+    // 模拟器/真车均为 Android 9 (API 28)，desugaring 不需要；保持默认即可
+    lint {
+        abortOnError false
+    }
+}

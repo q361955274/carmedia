@@ -1,0 +1,26 @@
+# ============================================================
+# CarMedia 本地配置示例（本文件可安全入库，不含任何真实值）
+# 用法：复制本文件为同级目录下的 local.properties，再填入真实值。
+# local.properties 已被 .gitignore 忽略，不会提交到仓库；
+# 其中所有值均为占位符 / 通用示例，不含真实凭据、真实域名或本机用户名路径。
+# ============================================================
+
+# Android SDK 在本机的安装路径（通用示例形式，请按本机实际路径改写，勿保留示例值）
+sdk.dir=/path/to/android-sdk
+
+# eCarX 开放平台 AppId（占位符，填入真实值后由构建注入 AndroidManifest）
+ecarx.appId=YOUR_ECARX_APP_ID
+
+# eCarX 开放平台 AppKey（占位符，严禁随源码或截图对外提交）
+ecarx.appKey=YOUR_ECARX_APP_KEY
+
+# 应用更新清单地址（占位符域名，正式环境替换为实际 HTTPS 地址）
+carmedia.updateUrl=https://example.com/CarMedia.txt
+
+# 热更新（GitHub 私有仓库）配置；三项均为可选，缺省占位符下不发起热更新请求。
+# 仓库归属（GitHub 用户名 / 组织名）
+gh.owner=YOUR_GITHUB_OWNER
+# 仓库名
+gh.repo=YOUR_GITHUB_REPO
+# 私有仓库访问令牌（Personal Access Token，严禁随源码或截图对外提交）
+gh.token=YOUR_GITHUB_TOKEN
